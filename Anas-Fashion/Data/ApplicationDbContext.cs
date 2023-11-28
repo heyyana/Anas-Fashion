@@ -10,5 +10,6 @@ namespace Anas_Fashion.Data
 
         public DbSet<FornecedorModel> Fornecedores { get; set; }
         public DbSet<VendedorModel> Vendedores { get; set; }
+        public DbSet<ClienteModel> Clientes { get; set;}
     }
 }

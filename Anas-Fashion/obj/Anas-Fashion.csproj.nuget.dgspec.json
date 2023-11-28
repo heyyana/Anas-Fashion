@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\Anas-Fashion\\Anas-Fashion\\Anas-Fashion.csproj": {}
+    "C:\\Users\\Aluno\\Desktop\\Anas-Fashion\\Anas-Fashion\\Anas-Fashion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\Anas-Fashion\\Anas-Fashion\\Anas-Fashion.csproj": {
+    "C:\\Users\\Aluno\\Desktop\\Anas-Fashion\\Anas-Fashion\\Anas-Fashion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\Anas-Fashion\\Anas-Fashion\\Anas-Fashion.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\Anas-Fashion\\Anas-Fashion\\Anas-Fashion.csproj",
         "projectName": "Anas-Fashion",
-        "projectPath": "C:\\Users\\User\\Documents\\Anas-Fashion\\Anas-Fashion\\Anas-Fashion.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\Anas-Fashion\\Anas-Fashion\\obj\\",
+        "projectPath": "C:\\Users\\Aluno\\Desktop\\Anas-Fashion\\Anas-Fashion\\Anas-Fashion.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aluno\\Desktop\\Anas-Fashion\\Anas-Fashion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

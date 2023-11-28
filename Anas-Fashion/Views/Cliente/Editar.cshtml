@@ -1,0 +1,45 @@
+﻿@model ClienteModel
+@{
+	ViewData["title"] = "Editar Cliente";
+}
+
+<div class="container bg-dark p-5 rounded-5">
+	<div class="mb-5 text-center">
+		<h1 class="text-light">Editar Cliente</h1>
+	</div>
+
+	<form method="post" asp-controller="Cliente" asp-action="Editar">
+
+		<input type="hidden" asp-for="Id" />
+
+		<div class="form-group">
+			<label for="Nome" class="text-light">Nome</label>
+			<input type="text" class="form-control" asp-for="Nome" id="Nome" aria-describedby="emailHelp" placeholder="Nome do cliente" />
+			<span class="text-danger" asp-validation-for="Nome"></span>
+		</div>
+		<div class="form-group">
+			<label for="Email" class="text-light">Email</label>
+			<input type="text" class="form-control" asp-for="Email" id="Email" aria-describedby="emailHelp" placeholder="Email do cliente" />
+			<span class="text-danger" asp-validation-for="Email"></span>
+		</div>
+		<div class="form-group">
+			<label for="Telefone" class="text-light">Telefone</label>
+			<input type="text" class="form-control" asp-for="Telefone" id="Telefone" placeholder="Telefone do cliente" />
+			<span class="text-danger" asp-validation-for="Telefone"></span>
+		</div>
+		<div class="form-group">
+			<label for="CPF" class="text-light">CPF</label>
+			<input type="text" class="form-control" asp-for="CPF" id="CPF" placeholder="CPF do cliente" />
+			<span class="text-danger" asp-validation-for="CPF"></span>
+		</div>
+		<div class="form-group">
+			<label for="Endereco" class="text-light">Endereço</label>
+			<input type="text" class="form-control" asp-for="Endereco" id="Endereco" placeholder="Endereço do cliente" />
+			<span class="text-danger" asp-validation-for="Endereco"></span>
+		</div>
+		<div class="d-flex gap-5 mt-5">
+			<button type="submit" class="btn btn-success w-50">Enviar</button>
+			<a class="btn btn-primary w-50" asp-controller="Cliente" asp-action="Index">Voltar</a>
+		</div>
+	</form>
+</div>
