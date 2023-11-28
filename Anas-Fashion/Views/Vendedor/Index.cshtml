@@ -1,0 +1,49 @@
+﻿@model IEnumerable<VendedorModel>
+
+<div class="container">
+	<div class="d-flex justify-content-between align-items-center mb-5">
+		<h1>Vendedor</h1>
+		<a class="btn btn-success mx-2" asp-controller="Vendedor" asp-action="Cadastrar">Cadastrar novo vendedor</a>
+	</div>
+
+
+	<table class="table table-stripped table-dark">
+		<thead>
+			<tr>
+				<th scope="col">Id</th>
+				<th scope="col">Nome</th>
+				<th scope="col">Email</th>
+				<th scope="col">Telefone</th>
+				<th scope="col">Endereço</th>
+				<th scope="col">Ações</th>
+			</tr>
+		</thead>
+		<tbody>
+			@if (Model != null)
+			{
+				@foreach (var vendedor in Model)
+				{
+					<tr>
+						<th scope="row">@vendedor.Id</th>
+						<td>@vendedor.Nome</td>
+						<td>@vendedor.Email</td>
+						<td>@vendedor.Telefone</td>
+						<td>@vendedor.Endereco</td>
+						<td>
+							<a asp-controller="Vendedor" asp-action="Editar" asp-route-id="@vendedor.Id" class="btn btn-warning mx-2">Editar</a>
+							<a asp-controller="Vendedor" asp-action="Excluir" asp-route-id="@vendedor.Id" class="btn btn-danger mx-2">Excluir</a>
+						</td>
+					</tr>
+				}
+			}
+			else
+			{
+				<tr><td><strong>Nenhum Vendedor foi encontrado!</strong></td></tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+@{
+
+}
