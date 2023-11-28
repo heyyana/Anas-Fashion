@@ -1,0 +1,42 @@
+﻿@model FornecedorModel
+@{
+	ViewData["title"] = "Cadastro Fornecedor";
+}
+
+<div class="container bg-dark p-5 rounded-5">
+	<div class="mb-5 text-center">
+		<h1 class="text-light">Cadastro de Fornecedor</h1>
+	</div>
+
+	<form method="post" asp-controller="Fornecedor" asp-action="Cadastrar">
+		<div class="form-group">
+			<label for="Empresa" class="text-light">Nome da Empresa</label>
+			<input type="text" class="form-control" asp-for="Empresa" id="Empresa" aria-describedby="emailHelp" placeholder="Qual o nome da empresa?"/>
+			<span class="text-danger" asp-validation-for="Empresa"></span>
+		</div>
+		<div class="form-group">
+			<label for="CNPJ" class="text-light">CNPJ</label>
+			<input type="text" class="form-control" asp-for="CNPJ" id="CPNJ" aria-describedby="emailHelp" placeholder="Qual o número do CNPJ?" />
+			<span class="text-danger" asp-validation-for="CNPJ"></span>
+		</div>
+		<div class="form-group">
+			<label for="Endereco" class="text-light">Endereço</label>
+			<input type="text" class="form-control" asp-for="Endereco" id="Endereco" placeholder="Qual o endereço?" />
+			<span class="text-danger" asp-validation-for="Endereco"></span>
+		</div>
+		<div class="form-group">
+			<label for="Telefone" class="text-light">Telefone</label>
+			<input type="text" class="form-control" asp-for="Telefone" id="Telefone" placeholder="Qual o número de telefone?" />
+			<span class="text-danger" asp-validation-for="Endereco"></span>
+		</div>
+		<div class="form-group">
+			<label for="Email" class="text-light">Email</label>
+			<input type="text" class="form-control" asp-for="Email" id="Email" placeholder="Qual o endereço de email?" />
+			<span class="text-danger" asp-validation-for="Email"></span>
+		</div>
+		<div class="d-flex gap-5 mt-5">
+			<button type="submit" class="btn btn-success w-50">Enviar</button>
+			<a class="btn btn-primary w-50" asp-controller="Fornecedor" asp-action="Index">Voltar</a>
+		</div>
+	</form>
+</div>
